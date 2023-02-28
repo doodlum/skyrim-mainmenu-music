@@ -82,8 +82,9 @@ EXTERN_C [[maybe_unused]] __declspec(dllexport) bool SKSEAPI SKSEPlugin_Load(con
 EXTERN_C [[maybe_unused]] __declspec(dllexport) constinit auto SKSEPlugin_Version = []() noexcept {
 	SKSE::PluginVersionData v;
 	v.PluginName("PluginName");
-	v.PluginVersion({ 1, 0, 0, 0 });
+	v.PluginVersion({ 1, 1, 0, 0 });
 	v.UsesAddressLibrary(true);
+	v.HasNoStructUse(true);
 	return v;
 }();
 
